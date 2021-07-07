@@ -146,3 +146,13 @@ Android and/or iOS.
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+## 解决引入 flutter_audio_recorder报错
+ And because if flutter_audio_recorder any and process >=3.0.12 then intl >=0.14.0 <0.17.0 (1), if flutter_audio_recorder any and path_provider_linux <0.2.0-nullsafety then intl >=0.14.0 <0.17.0.
+
+    And because path_provider >=1.6.10 <2.0.0-nullsafety depends on path_provider_linux ^0.0.1, if flutter_audio_recorder any and path_provider >=1.6.10 <2.0.0-nullsafety then intl >=0.14.0 <0.17.0.
+
+    And because h3yunapp depends on flutter_localizations any from sdk which depends on intl 0.17.0, flutter_audio_recorder is incompatible with path_provider >=1.6.10 <2.0.0-nullsafety
+    
+flutter_audio_recorder: ^0.5.5 改成 flutter_audio_recorder2: ^0.0.2
